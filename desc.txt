@@ -1,0 +1,14 @@
+1. LearnMate
+2. EduBot
+3. StudyHub
+4. CourseCompanion
+5. QuizMaster
+6. SmartStudy
+7. EduAssist
+
+
+
+Project Description for LearnMate:
+LearnMate is an intelligent learning assistant designed to help students better understand their course materials. It leverages state-of-the-art language models and a vector-based search system to provide instant document summaries, quiz generation, and chatbot assistance based on uploaded course documents. With LearnMate, students can enhance their learning experience by interacting with the bot for questions and answers, getting a summary of the course material, and creating custom quizzes based on the documents they upload. The bot stores conversation history to ensure continuous interaction and context retention.
+
+The system integrates with Pinecone as a vector database for fast and efficient similarity search, while Langchain handles the language model interactions for summarization and chatbot responses. Students can upload documents in various formats like PDF, PPT, Word, and Excel, and LearnMate will automatically analyze the content, summarize it, and even generate quizzes for them.
