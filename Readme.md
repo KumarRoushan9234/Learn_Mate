@@ -28,8 +28,36 @@ This project uses **FastAPI** for the backend, **Pinecone** as the vector databa
 
 ## Project Structure
 
-LearnMate/ │ ├── app/ │ ├── init.py │ ├── main.py # FastAPI entry point │ ├── models/ │ │ ├── document.py # Document model (for metadata) │ │ ├── quiz.py # Quiz model │ ├── services/ │ │ ├── vector_store.py # Pinecone integration for vector DB │ │ ├── summarizer.py # Document summarization logic │ │ ├── quiz_generator.py # Logic for generating quizzes │ │ ├── chatbot.py # Chatbot integration using Langchain │ ├── api/ │ │ ├── document.py # API endpoints for document handling │ │ ├── chatbot.py # API endpoints for chatbot interactions │ │ ├── quiz.py # API endpoints for quiz handling │ ├── utils/ │ │ ├── helpers.py # Utility functions (e.g., file handling, validation) │ ├── config.py # Configuration file (e.g., Pinecone API key) │ ├── tests/ │ │ ├── test_api.py # API tests (Postman-compatible) │ │ ├── test_services.py # Service logic tests (for summarizer, quiz generator) │ ├── .env # Environment variables (Pinecone API keys, etc.) ├── requirements.txt # Dependencies ├── README.md # Project description and instructions
+**For Backend -> FastApi**
 
+backend_fast/
+├── app/
+│   ├── __init__.py
+│   ├── main.py           # FastAPI entry point
+│   ├── models/
+│   │   ├── document.py   # Document model (for metadata)
+│   │   ├── quiz.py       # Quiz model
+│   ├── services/
+│   │   ├── vector_store.py  # Pinecone integration for vector DB
+│   │   ├── summarizer.py    # Document summarization logic
+│   │   ├── quiz_generator.py # Logic for generating quizzes
+│   │   ├── chatbot.py      # Chatbot integration using Langchain
+│   ├── api/
+│   │   ├── document.py     # API endpoints for document handling
+│   │   ├── chatbot.py      # API endpoints for chatbot interactions
+│   │   ├── quiz.py         # API endpoints for quiz handling
+│   ├── utils/
+│   │   ├── helpers.py      # Utility functions (e.g., file handling, validation)
+│   ├── config.py           # Configuration file (e.g., Pinecone API key)
+├── tests/
+│   ├── test_api.py         # API tests (Postman-compatible)
+│   ├── test_services.py    # Service logic tests (for summarizer, quiz generator)
+├── .env                    # Environment variables (Pinecone API keys, etc.)
+├── requirements.txt        # Dependencies
+├── README.md               # Project description and instructions
+
+
+**For Frontend -> Next.js**
 ---
 
 ## Installation & Setup
